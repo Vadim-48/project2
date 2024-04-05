@@ -1,7 +1,7 @@
 @media (max-width: 1440px){
     .galery__img{
-        @include value("width", 370, 233); 
-        @include value("height", 350, 260); 
+        @include adaptiv-value("width", 370, 233, 1); 
+        @include adaptiv-value("height", 350, 260, 1); 
     }
 
     .intro__img, .about__img{

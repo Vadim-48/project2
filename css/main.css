@@ -309,6 +309,7 @@ body {
     top: 100px;
     font-size: 50px;
     right: 60px;
+    padding: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -789,9 +790,21 @@ iframe {
 
 @media (max-width: 1440px) {
   .galery__img {
-    width: calc(233px + 137 * (100vw - 1024px) / 416);
-    height: calc(260px + 90 * (100vw - 1024px) / 416);
+    width: 370px;
+    height: 350px;
   }
+}
+@media (max-width: 1440px) and (max-width: 1360px) {
+  .galery__img {
+    width: calc(233px + 137 * (100vw - 320px) / 1040);
+  }
+}
+@media (max-width: 1440px) and (max-width: 1360px) {
+  .galery__img {
+    height: calc(260px + 90 * (100vw - 320px) / 1040);
+  }
+}
+@media (max-width: 1440px) {
   .intro__img, .about__img {
     max-width: 450px;
   }
