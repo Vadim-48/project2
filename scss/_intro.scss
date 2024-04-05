@@ -1,0 +1,29 @@
+.intro {
+    @include adaptiv-value("padding-top", 47, 25, 1);
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__column {
+        max-width: 619px;
+    }
+
+    &__img {
+        max-width: 614px;
+    }
+
+    &__title {
+        @include adaptiv-value("font-size", 64, 36, 1); 
+        @include adaptiv-value("margin-bottom", 40, 20, 1);
+    }
+
+    &__text {
+        @include adaptiv-value("font-size", 30, 20, 1); 
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+
+    &__btn {
+    }
+}

@@ -1,0 +1,41 @@
+.about {
+    @include adaptiv-value("padding-top", 140, 60, 1); 
+
+    &__row {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__column {
+        max-width: 632px;
+    }
+
+    &__img {
+        max-width: 532px; 
+        border-radius: 0 330px 0 124px; 
+    }
+
+    &__title {
+        @include adaptiv-value("margin-bottom", 40, 20, 1); 
+    }
+
+    &__text {
+        @include adaptiv-value("margin-bottom", 40, 20, 1); 
+    }
+
+    &__btn {
+        @include adaptiv-value("width", 442, 200, 1); 
+    }
+}
+
+.more{
+    max-height: 333px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+}
+

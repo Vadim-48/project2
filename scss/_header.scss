@@ -1,0 +1,72 @@
+.header{
+      padding-top: 24px;
+      padding-bottom: 24px;
+}
+
+.nav {
+    color: var(--bleck-dark-blue);
+    display: flex;
+    justify-content: space-between;
+
+		&__menu {
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            @include adaptiv-value("gap", 20, 10, 1); 
+            @include adaptiv-value("font-size", 20, 10, 1); 
+		}
+
+            &__btn{
+                  border-radius: 25px;
+                  width: 213px;
+                  font-size: 24px;
+                  margin-right: 8px;
+                  padding: 22px 0;
+            }
+}
+.logo {
+
+		&__wrap {
+            display: flex;
+            align-items: center;
+        }
+
+		&__icon {
+            width: 55px;
+		}
+
+		&__name {
+            display: flex;
+            flex-direction: column;
+		}
+
+		&__title {
+            font-weight: 800;
+            @include adaptiv-value("font-size", 35, 24, 1); 
+		}
+
+		&__text {
+            font-weight: 500;
+            font-size: 15px; 
+            text-align: left;      
+		}
+}
+.menu {
+
+		&__list {
+            display: flex;
+            gap: 10px;  
+		}
+
+		&__lang {
+            font-size: inherit;
+            background: none;
+            text-transform: uppercase;
+		}
+
+            &__lang::after {
+            content: url('../img/header/arrow-down.svg');
+		}
+}
+
+

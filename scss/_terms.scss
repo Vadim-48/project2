@@ -1,0 +1,52 @@
+.terms {
+    @include adaptiv-value("padding-top", 64, 25, 1);
+
+    &__title {
+        text-align: center;
+        @include adaptiv-value("margin-bottom", 64, 25, 1);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 22px;
+    }
+
+    &__column {
+        max-width: 425px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+    &__sub-title {
+        @include adaptiv-value("font-size", 40, 25, 1);
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    &__text {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__column:nth-child(2) p {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        object-fit: cover;
+
+            &_trapezium {
+                width: 418px;
+                height: 376px;         
+                border-radius: 0 80px 0 120px;
+            }
+            &_round {
+                width: 374px;
+                height: 378px;             
+                border-radius: 225px;
+            }
+        
+    }
+}
+

@@ -1,0 +1,12 @@
+.location {
+    @include adaptiv-value("padding-top", 185, 50, 1);
+    text-align: center;
+    &__title {
+        @include adaptiv-value("margin-bottom", 64, 25, 1);
+    }
+
+}
+iframe{
+    @include adaptiv-value("width", 1130, 270, 1); 
+    @include adaptiv-value("height", 500, 300, 1); 
+}

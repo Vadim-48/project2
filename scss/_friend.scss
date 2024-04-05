@@ -1,0 +1,68 @@
+.friend {
+    @include adaptiv-value("padding-top", 150, 60, 1); 
+
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__text {
+        @include adaptiv-value("margin-bottom", 64, 28, 1); 
+        text-align: center;
+    }
+
+    &__galery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 60px;
+        justify-content: center;
+        @include adaptiv-value("margin-bottom", 40, 20, 1); 
+        padding-top: 25px;
+    }
+    &__more{
+        overflow: hidden;  
+        @include adaptiv-value("height", 1020, 300, 1); 
+    }
+}
+
+.galery {
+
+    &__img {
+        width: 370px;
+        height: 350px;
+        margin-bottom: 16px;
+    }
+
+    &__column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__row {
+    }
+
+    &__title {
+        font-weight: 700;
+        @include adaptiv-value("font-size", 40, 32, 1);
+        margin-bottom: 8px;
+    }
+
+    &__button {
+        width: 66px;
+        height: 66px;
+    }
+    &__btn{
+        margin: 0 auto;
+        @include adaptiv-value("width", 442, 250, 1);
+    }
+}
+
+.galery__element:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+    box-shadow: 10px 2px 2px rgb(199, 199, 199);
+}
+
+.span-none{
+    display: none;
+}

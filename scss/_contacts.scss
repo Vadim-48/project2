@@ -1,0 +1,42 @@
+.contacts {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        @include adaptiv-value("margin-bottom", 73, 40, 1); 
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__text {
+
+        &_color {
+            color: var(--blue);
+        }
+    }
+
+    &__connect {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        border-radius: 0 260px 0 122px;
+        max-width: 624px;     
+    }
+}
+
