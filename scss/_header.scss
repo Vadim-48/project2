@@ -8,65 +8,66 @@
     display: flex;
     justify-content: space-between;
 
-		&__menu {
+      &__menu {
             display: flex;
             justify-content: center;  
             align-items: center;
             @include adaptiv-value("gap", 20, 10, 1); 
             @include adaptiv-value("font-size", 20, 10, 1); 
-		}
+      }
 
-            &__btn{
-                  border-radius: 25px;
-                  width: 213px;
-                  font-size: 24px;
-                  margin-right: 8px;
-                  padding: 22px 0;
-            }
+      &__btn{
+            border-radius: 25px;
+            width: 213px;
+            font-size: 24px;
+            margin-right: 8px;
+            padding: 22px 0;
+      }
 }
 .logo {
 
-		&__wrap {
+      &__wrap {
             display: flex;
             align-items: center;
-        }
+      }
 
-		&__icon {
-            width: 55px;
-		}
+      // &__icon {
+            
+      // }
 
-		&__name {
+      &__name {
             display: flex;
             flex-direction: column;
-		}
+      }
 
-		&__title {
+      &__title {
             font-weight: 800;
             @include adaptiv-value("font-size", 35, 24, 1); 
-		}
+      }
 
-		&__text {
+      &__text {
             font-weight: 500;
-            font-size: 15px; 
+            font-size: 20px; 
             text-align: left;      
-		}
+      }
 }
 .menu {
 
-		&__list {
+      &__list {
             display: flex;
-            gap: 10px;  
-		}
+            gap: 10px; 
+            @include adaptiv-value("font-size", 20, 2, 1); 
+      }
 
-		&__lang {
+      &__lang {
             font-size: inherit;
             background: none;
             text-transform: uppercase;
-		}
+      }
 
-            &__lang::after {
+      &__lang::after {
             content: url('../img/header/arrow-down.svg');
-		}
+      }
 }
 
 
