@@ -3,25 +3,18 @@
         @include adaptiv-value("width", 370, 233, 1); 
         @include adaptiv-value("height", 350, 260, 1); 
     }
-
-    .intro__img, .about__img{
-        max-width: 450px;
-    }
 }
 
 @media (max-width: 1024px){
-    .galery__img, .terms__img{
-        width: 223px;
-        height: 260px;
-    }
     .friend__galery{
         gap: 23px;
     }
-    .contacts__img{
-        max-width: 424px;
-    }
+    
     .friend__more{
         height: 780px;
+    }
+    .about__img{
+        order: 2;
     }
     
 }

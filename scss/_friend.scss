@@ -28,8 +28,8 @@
 .galery {
 
     &__img {
-        width: 370px;
-        height: 350px;
+        @include adaptiv-value("width", 370, 260, 1); 
+        @include adaptiv-value("height", 350, 250, 1); 
         margin-bottom: 16px;
     }
 
@@ -38,8 +38,8 @@
         justify-content: space-between;
     }
 
-    &__row {
-    }
+    // &__row {
+    // }
 
     &__title {
         font-weight: 700;

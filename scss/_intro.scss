@@ -11,7 +11,7 @@
     }
 
     &__img {
-        max-width: 614px;
+        @include adaptiv-value("width", 614, 260, 1); 
     }
 
     &__title {
@@ -24,6 +24,6 @@
         @include adaptiv-value("margin-bottom", 80, 40, 1);
     }
 
-    &__btn {
-    }
+    // &__btn {
+    // }
 }

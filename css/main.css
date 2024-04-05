@@ -338,7 +338,12 @@ body {
   max-width: 619px;
 }
 .intro__img {
-  max-width: 614px;
+  width: 614px;
+}
+@media (max-width: 1360px) {
+  .intro__img {
+    width: calc(260px + 354 * (100vw - 320px) / 1040);
+  }
 }
 .intro__title {
   font-size: 64px;
@@ -368,6 +373,7 @@ body {
     margin-bottom: calc(40px + 40 * (100vw - 320px) / 1040);
   }
 }
+
 .about {
   padding-top: 140px;
 }
@@ -386,8 +392,13 @@ body {
   max-width: 632px;
 }
 .about__img {
-  max-width: 532px;
+  width: 530px;
   border-radius: 0 330px 0 124px;
+}
+@media (max-width: 1360px) {
+  .about__img {
+    width: calc(260px + 270 * (100vw - 320px) / 1040);
+  }
 }
 .about__title {
   margin-bottom: 40px;
@@ -472,6 +483,16 @@ body {
   height: 350px;
   margin-bottom: 16px;
 }
+@media (max-width: 1360px) {
+  .galery__img {
+    width: calc(260px + 110 * (100vw - 320px) / 1040);
+  }
+}
+@media (max-width: 1360px) {
+  .galery__img {
+    height: calc(250px + 100 * (100vw - 320px) / 1040);
+  }
+}
 .galery__column {
   display: flex;
   justify-content: space-between;
@@ -531,6 +552,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 22px;
+  flex-wrap: wrap;
 }
 .terms__column {
   max-width: 425px;
@@ -561,13 +583,11 @@ body {
      object-fit: cover;
 }
 .terms__img_trapezium {
-  width: 418px;
-  height: 376px;
+  width: 250px;
   border-radius: 0 80px 0 120px;
 }
 .terms__img_round {
-  width: 374px;
-  height: 378px;
+  width: 260px;
   border-radius: 225px;
 }
 
@@ -639,7 +659,12 @@ iframe {
 }
 .contacts__img {
   border-radius: 0 260px 0 122px;
-  max-width: 624px;
+  width: 624px;
+}
+@media (max-width: 1360px) {
+  .contacts__img {
+    width: calc(260px + 364 * (100vw - 320px) / 1040);
+  }
 }
 
 .help {
@@ -804,24 +829,15 @@ iframe {
     height: calc(260px + 90 * (100vw - 320px) / 1040);
   }
 }
-@media (max-width: 1440px) {
-  .intro__img, .about__img {
-    max-width: 450px;
-  }
-}
 @media (max-width: 1024px) {
-  .galery__img, .terms__img {
-    width: 223px;
-    height: 260px;
-  }
   .friend__galery {
     gap: 23px;
   }
-  .contacts__img {
-    max-width: 424px;
-  }
   .friend__more {
     height: 780px;
+  }
+  .about__img {
+    order: 2;
   }
 }
 @media (max-width: 991px) {

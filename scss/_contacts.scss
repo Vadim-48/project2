@@ -36,7 +36,7 @@
 
     &__img {
         border-radius: 0 260px 0 122px;
-        max-width: 624px;     
+        @include adaptiv-value("width", 624, 260, 1);     
     }
 }
 
